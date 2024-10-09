@@ -66,11 +66,53 @@
 <footer>             
     <div style="text-align: center;">
 
-    <p><strong>Ingresa tu correo electronico para recibir mas informacion de futuras actualizaciones: </strong></p>
-        <label for="correo electronico">Correo electronico: </label>
-        <input type="text">
-    
+        
+        <form>
+            <fieldset>
+                <legend>Inserta correo electronico:</legend>
+                    <label for="correo electronico">Correo electronico: </label>
+                    <input type="text">
+            </fieldset>
+        </form>
+
     <button>Enviar</button>
+
+    <form>
+        <fieldset>
+            <label for="Rutas">Escoge tu ruta:</label>
+            <select id="Rutas" name="cars">
+              <option value="MOLINOS">MOLINOS</option>
+              <option value="OLIMPICA">OLIMPICA</option>
+              <option value="SANTA MONICA">SANTA MONICA</option>
+            </select>
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset>
+            <label for="password">Digita tu contraseña: </label>
+            <input type="password" id="password" name="password">
+        </fieldset>
+      </form>
+
+      <form>
+        <p>Selecciona tu ruta favorita: </p>
+        <fieldset>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="MOLINOS">Molinos</label><br>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="OLIMPICA">Olimpica</label><br>
+            <input type="radio" id="green" name="color" value="green">
+            <label for="SANTA MONICA">Santa Monica</label><br>
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset>
+            <input type="checkbox" id="agree" name="agree" value="yes">
+            <label for="agree">Acepto los terminos y condiciones</label>
+        </fieldset>
+      </form>
 
     <ol>
         <ul>
