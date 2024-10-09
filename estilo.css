@@ -1,0 +1,106 @@
+body {
+    background-color: #8edb8f; /* Fondo color */
+    background-image: url('ruta-de-la-imagen.jpg'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center; /* Centrada */
+    background-repeat: no-repeat; /* No repite la imagen */
+}
+
+h1 {
+    border: 2px solid #4CAF50; /* Color y grosor del borde */
+    border-radius: 15px;       /* Esquinas redondeadas */
+    padding: 10px 20px;        /* Espacio interno (ajusta según necesidad) */
+    display: inline-block;     /* Para que el cuadro se ajuste al tamaño del texto */
+    background-color: #3aff86; /* Color de fondo del cuadro (opcional) */
+    color: #333;               /* Color del texto */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre los elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+    gap: 20px; /* Espacio uniforme entre elementos (opcional) */
+}
+
+img {
+    border-radius: 15px; /* Redondea las imágenes */
+    width: 300px; /* Ajusta el tamaño de las imágenes */
+    height: 200px; /* Ajusta el tamaño de las imágenes */
+}
+
+li {
+    list-style-type: none; /* Quita los puntos de las listas */
+}
+
+div {
+    text-align: center;
+}
+
+.boton-inicio {
+    position: absolute;              /* Posiciona el enlace de forma absoluta */
+    top: 20px;                       /* Espacio desde el borde superior */
+    left: 20px;                      /* Espacio desde el borde izquierdo */
+    display: inline-block;           /* Hace que el botón se ajuste al tamaño del texto */
+    padding: 10px 20px;              /* Espacio interno del botón */
+    background-color: #4CAF50;       /* Color de fondo del botón */
+    color: white;                    /* Color del texto */
+    text-decoration: none;           /* Quita el subrayado del enlace */
+    border-radius: 50px;             /* Convierte el botón en una forma redondeada */
+    font-size: 16px;                 /* Tamaño de fuente */
+    font-weight: bold;               /* Hace que el texto sea negrita */
+    border: 2px solid transparent;   /* Borde transparente */
+    transition: background-color 0.3s, border 0.3s; /* Transición suave para hover */
+}
+
+.boton-inicio:hover {
+    background-color: #45a049;       /* Color de fondo más oscuro en hover */
+    border-color: white;             /* Borde blanco en hover */
+}
+
+.boton-cuadrado {
+    display: inline-block;         /* Permite aplicar ancho y alto */
+    padding: 15px 25px;           /* Espaciado interno (ajusta según sea necesario) */
+    background-color: #3aff86;      /* Fondo blanco */
+    color: black;                 /* Color del texto */
+    text-decoration: none;         /* Sin subrayado */
+    border-radius: 10px;          /* Bordes redondeados */
+    border: 2px solid #ddd;       /* Bordes suaves */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color */
+    margin-bottom: 20px;          /* Espacio entre el botón y la imagen (ajusta el valor según sea necesario) */
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el body ocupe toda la pantalla */
+}
+
+table {
+    border-collapse: collapse; /* Quita los espacios entre los bordes */
+    width: 50%;                /* Ajusta el ancho de la tabla a un 50% */
+    margin: 20px auto;         /* Centra la tabla en la página */
+    font-family: Arial, sans-serif;
+    background-color: white;   /* Fondo blanco para la tabla */
+}
+
+th, td {
+    padding: 5px;              /* Reduce el espaciado interno a 5px */
+    text-align: center;        /* Alinea el texto en el centro */
+    border: 1px solid #ddd;    /* Bordes más suaves */
+    background-color: white;   /* Fondo blanco para las celdas */
+}
+
+th {
+    background-color: #4CAF50; /* Fondo de encabezado */
+    color: white;              /* Color del texto en el encabezado */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alterno para filas pares */
+}
+
+tfoot {
+    background-color: #f1f1f1; /* Fondo de pie de página */
+    font-weight: bold;         /* Texto en negrita para pie de página */
+}
