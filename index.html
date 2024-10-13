@@ -64,37 +64,14 @@
         <address>
             <p><strong>2024 Chuy Inc.</strong> Todos los derechos reservados</p>
         </address>
+        <!-- Aquí se mostrará la fecha de última modificación -->
+        <p id="fecha-modificacion"></p>
     </div>
 </footer>
 
-<pre>
-    <div style="text-align: center;">
-        .-------------------------------------------------------------.
-        '------..-------------..----------..----------..----------..--.|
-        |       \            ||          ||          ||          ||  ||
-        |        \           ||          ||          ||          ||  ||
-        |    ..   ||  _    _  ||    _   _ || _    _   ||    _    _||  ||
-        |    ||   || //   //  ||   //  // ||//   //   ||   //   //|| /||
-        |_.------"''----------''----------''----------''----------''--'|
-         |)|      |       |       |       |    |      mga|      ||==|  |
-         | |      |  _-_  |       |       |    |  .-.    |      ||==| C|
-         | |  __  |.'.-.' |   _   |   _   |    |.'.-.'.  |  __  | "__=='
-         '---------'|( )|'----------------------'|( )|'----------""
-    </div>
-</pre>
-
-<small>            
-    <div style="text-align: center;">
-
-        <p>Creditos del ASCI ART.</p>
-
-        <p><cite>Martin Atkins - mart.atkins@bigfoot.com</cite></p>
-
-        <p>Chuy<sub>2</sub>O</p>
-        <p>Chuy<sup>2</sup>O</p>
-
-    </div>
-</small>
+<script>
+    document.getElementById("fecha-modificacion").innerText = "Última actualización: " + document.lastModified;
+</script>
 
 </body>
 </html>
