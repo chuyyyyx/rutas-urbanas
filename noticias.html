@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="formularios.css">
 </head>
 <body>
 
@@ -14,6 +15,7 @@
     <a href="index.html" class="boton-inicio">PAGINA DE INICIO</a>
 
     <h1>NOTICIAS</h1>
+    <p id="fecha-modificacion"></p>
 </div>
 
 </header>
@@ -63,67 +65,72 @@
 
 </main>
 
-<footer>             
+<footer>
     <div style="text-align: center;">
+        <!-- Contenedor para los formularios -->
+        <div class="form-container">
+            <form>
+                <fieldset>
+                    <legend>Inserta correo electrónico:</legend>
+                    <label for="correo-electronico">Correo electrónico: </label>
+                    <input type="text" id="correo-electronico" class="input-text">
+                </fieldset>
+            </form>
 
-        
-        <form>
-            <fieldset>
-                <legend>Inserta correo electronico:</legend>
-                    <label for="correo electronico">Correo electronico: </label>
-                    <input type="text">
-            </fieldset>
-        </form>
+            <form>
+                <fieldset>
+                    <label for="Rutas">Escoge tu ruta:</label>
+                    <select id="Rutas" name="cars" class="input-select">
+                      <option value="MOLINOS">MOLINOS</option>
+                      <option value="OLIMPICA">OLIMPICA</option>
+                      <option value="SANTA MONICA">SANTA MONICA</option>
+                    </select>
+                </fieldset>
+            </form>
 
-    <button>Enviar</button>
+            <form>
+                <fieldset>
+                    <label for="password">Digita tu contraseña: </label>
+                    <input type="password" id="password" name="password" class="input-text">
+                </fieldset>
+            </form>
 
-    <form>
-        <fieldset>
-            <label for="Rutas">Escoge tu ruta:</label>
-            <select id="Rutas" name="cars">
-              <option value="MOLINOS">MOLINOS</option>
-              <option value="OLIMPICA">OLIMPICA</option>
-              <option value="SANTA MONICA">SANTA MONICA</option>
-            </select>
-        </fieldset>
-      </form>
+            <form>
+                <fieldset>
+                    <legend>Selecciona tu ruta favorita: </legend>
+                    <input type="radio" id="molinos" name="ruta" value="molinos">
+                    <label for="molinos">Molinos</label><br>
+                    <input type="radio" id="olimpica" name="ruta" value="olimpica">
+                    <label for="olimpica">Olimpica</label><br>
+                    <input type="radio" id="santa-monica" name="ruta" value="santa-monica">
+                    <label for="santa-monica">Santa Mónica</label><br>
+                </fieldset>
+            </form>
 
-      <form>
-        <fieldset>
-            <label for="password">Digita tu contraseña: </label>
-            <input type="password" id="password" name="password">
-        </fieldset>
-      </form>
+            <form>
+                <fieldset>
+                    <input type="checkbox" id="agree" name="agree" value="yes">
+                    <label for="agree">Acepto los términos y condiciones</label>
+                </fieldset>
+            </form>
 
-      <form>
-        <p>Selecciona tu ruta favorita: </p>
-        <fieldset>
-            <input type="radio" id="red" name="color" value="red">
-            <label for="MOLINOS">Molinos</label><br>
-            <input type="radio" id="blue" name="color" value="blue">
-            <label for="OLIMPICA">Olimpica</label><br>
-            <input type="radio" id="green" name="color" value="green">
-            <label for="SANTA MONICA">Santa Monica</label><br>
-        </fieldset>
-      </form>
+            <button>Enviar</button>
+        </div>
 
-      <form>
-        <fieldset>
-            <input type="checkbox" id="agree" name="agree" value="yes">
-            <label for="agree">Acepto los terminos y condiciones</label>
-        </fieldset>
-      </form>
+        <!-- Información de contacto -->
+        <div class="contact-info">
+            <p><small><a href="mailto:chuyochoa929@gmail.com">Escríbenos...</a></small></p>
+            <p><small><a href="tel:+11111111">Llámanos &phone;</a></small></p>
+        </div>
 
-    <ol>
-        <ul>
-            <p><small><a href="mailto:chuyochoa929@gmail.com">Escribenos...</a></small></p>
-            <p><small><a href="tel:+11111111">Llamanos &phone;</a></small></p>
-        </ul>
-    </ol>
-
-    <p><small><strong>2024 Chuy Inc.</strong> Todos los derechos reservados</small></p>
+        <!-- Derechos reservados -->
+        <p><small><strong>2024 Chuy Inc.</strong> Todos los derechos reservados</small></p>
+    </div>
 </footer>
 
+<script>
+    document.getElementById("fecha-modificacion").innerText = "Última actualización: " + document.lastModified;
+</script>
 
 </body>
 </html>
