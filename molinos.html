@@ -80,12 +80,19 @@
 
 </main>
 
-<footer>
+<footer style="text-align: center;">
+
+    <p id="fecha-modificacion"></p>
 
     <div style="text-align: center;">
         <p><small><strong>2024 Chuy Inc.</strong> Todos los derechos reservados</small></p>
     </div>
 
 </footer>
+
+<script>
+    document.getElementById("fecha-modificacion").innerText = "Última actualización: " + document.lastModified;
+</script>
+
 </body>
 </html>
